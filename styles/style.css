@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+    font-size: 22px;
+
+    display: flex;
+    justify-content: center;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* Font Family & color */
+
+  h1, h2, h3, h4,h5, h6,
+  p, a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+
+  }
+
+  /* Header */
+
+  header {
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      left: 0%;
+
+      display: flex;
+      background-color: black;
+      justify-content: space-between;
+      border-bottom: 1px solid seashell;
+      height: 69px;
+  } 
+
+  nav {
+      margin-right: 30px;
+
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 25%;
+  }
+
+  header img {
+      height: 50px;
+      width: auto;
+  }
+  /* Hero Banner */
+  .hero-banner {
+      margin-top: 69px;
+
+      width: 1200px;
+      height: 700px;
+      background-image: url('/resources/images/img-mission-background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  /* flex-direction column inverts the axes in which align-items and justify content act upon */
+  .banner-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    justify-content: center;   
+}
+
+.image-and-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-and-caption img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/* Locations Banner */
+
+.banner-locations {
+    background-image: url('/resources/images/img-locations-background.jpg');
+    height: 500px;
+    width: inherit;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+}
+
+.location-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: black;
+
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+/* Page Footer */
+.footer {
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 1195px) {
+    nav {
+        width: 50%;
+    }
+}
+
+  
+
+
+  
